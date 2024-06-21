@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'maruburi';
+    src: url('../resource/MaruBuri-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumMyeongjo';
+    src: url('../resource/NanumMyeongjo-YetHangul.ttf') format('truetype');
+}
+
+body {
+    max-width: 1000px;
+}
+
+.endding {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    color: white;
+    font-family: 'NanumMyeongjo';
+    text-align: center;
+    
+}
+.endding_cover {
+    filter: brightness(50%);
+}
+
+.endding_frame {
+    position: relative;
+}
