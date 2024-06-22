@@ -1,15 +1,38 @@
 @font-face {
     font-family: 'maruburi';
-    src: url('../resource/MaruBuri-Regular.ttf') format('truetype');
+    src: url('./resource/MaruBuri-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'NanumMyeongjo';
-    src: url('../resource/NanumMyeongjo-YetHangul.ttf') format('truetype');
+    src: url('./resource/NanumMyeongjo-YetHangul.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'nanum-square';
+    src: url('./resource/NanumSquareNeo-bRg.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'junghagsaeng';
+    src: url('./resource/NanumJungHagSaeng.ttf') format('truetype');
+}
 body {
     max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.main_title {
+    font-family: 'maruburi';
+    font-size: 20pt;
+}
+
+.main_comment{
+    font-family: 'nanum-square';
+}
+.main_img{
+    width: 100%;
 }
 
 .endding {
@@ -23,6 +46,7 @@ body {
     
 }
 .endding_cover {
+    width: 100%;
     filter: brightness(50%);
 }
 
