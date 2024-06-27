@@ -53,3 +53,11 @@ body {
 .endding_frame {
     position: relative;
 }
+
+.game_btn {
+    background-color: olive;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
