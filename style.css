@@ -18,9 +18,16 @@
     src: url('./resource/NanumJungHagSaeng.ttf') format('truetype');
 }
 body {
-    max-width: 1000px;
+    max-width: 700px;
     margin: auto;
     text-align: center;
+}
+
+.icon_section {
+    font-size: 20pt;
+    color: #f1c0c6;
+    font-weight: 900;
+    margin: 30px 0px;
 }
 
 .main_title {
@@ -28,11 +35,53 @@ body {
     font-size: 20pt;
 }
 
-.main_comment{
+.main_comment {
     font-family: 'nanum-square';
 }
-.main_img{
+
+.main_img {
     width: 100%;
+}
+
+.map_btn {
+    display: flex;
+    text-decoration-line: none;
+    color:white;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'nanum-square';
+    font-weight: 900;
+}
+
+.sub_title {
+    color: #3f4d64;
+    font-size: 20pt;
+    font-family: 'NanumMyeongjo';
+    margin: 35px 0px;
+    font-weight: bold;
+}
+
+.contents_section {
+    background-color: #f1f1f1;
+    height: 100px;
+}
+
+.contents_box {
+    margin: 15px;
+}
+
+.middle_title {
+    font-family: 'nanum-square';
+    font-weight: 900;
+    color: #3f4d64;
+    margin: 10px 0px;
+}
+
+.content_style {
+    color:#4b4b4b;
+    font-size: 10pt;
+    line-height: 1.7em;
 }
 
 .endding {
@@ -56,8 +105,114 @@ body {
 
 .game_btn {
     background-color: olive;
-    color: white;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
+}
+
+.game_btn_text {
+    color: white;
+    text-decoration-line: none;
+    font-family: 'nanum-square';
+    font-weight: 900;
+}
+  
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
 }
