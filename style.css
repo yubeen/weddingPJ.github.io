@@ -43,6 +43,20 @@ body {
     width: 100%;
 }
 
+.call_icon {
+    color: white;
+    font-size: 18pt;
+    text-decoration-line: none;
+    margin: 0px 20px;
+}
+
+.call_background {
+    background-color: #009fff;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 .map_btn {
     display: flex;
     text-decoration-line: none;
