@@ -1,22 +1,25 @@
 @font-face {
     font-family: 'maruburi';
-    src: url('./resource/MaruBuri-Regular.ttf') format('truetype');
+    src: url('./resource/MaruBuri-Regular.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'NanumMyeongjo';
-    src: url('./resource/NanumMyeongjo-YetHangul.ttf') format('truetype');
+    src: url('./resource/NanumMyeongjoBold.woff2') format('woff2');
 }
 
 @font-face {
     font-family: 'nanum-square';
-    src: url('./resource/NanumSquareNeo-bRg.ttf') format('truetype');
+    src: url('./resource/NanumSquareNeoTTF-bRg.woff2') format('woff2');
 }
 
 @font-face {
-    font-family: 'junghagsaeng';
-    src: url('./resource/NanumJungHagSaeng.ttf') format('truetype');
+    font-family: 'Amsterdam';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Amsterdam.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+
 body {
     max-width: 1200px;
     margin: auto;
@@ -84,7 +87,9 @@ body {
 
 .contents_section {
     background-color: #f1f1f1;
-    height: 100px;
+    height: 150px;
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
 }
 
 .contents_box {
@@ -138,13 +143,42 @@ body {
 }
 
 /* 아코디언메뉴 */
-details { margin:5px 0 10px; }
-details > summary { background:#444; color:#fff; padding:10px; outline:0; border-radius:5px; cursor:pointer; transition:background 0.5s; text-align:left; box-shadow: 1px 1px 2px gray;}
-details > summary::-webkit-details-marker { background:#444; color:#fff; background-size:contain; transform:rotate3d(0, 0, 1, 90deg); transition:transform 0.25s;}
-details[open] > summary::-webkit-details-marker { transform:rotate3d(0, 0, 1, 180deg);}
-details[open] > summary { background:#444;}
-details[open] > summary ~ * { animation:reveal 0.5s;}
-.tpt { background:#444; color:#fff; margin:5px 0 10px; padding:5px 10px; line-height:25px; border-radius:5px; box-shadow: 1px 1px 2px gray;}
+details { 
+    margin:5px 0 10px; 
+}
+
+details > summary { 
+    background:#444; 
+    color:#fff; padding:10px; outline:0; border-radius:5px; cursor:pointer; transition:background 0.5s; text-align:left; box-shadow: 1px 1px 2px gray;}
+details > summary::-webkit-details-marker { 
+    background:#444; 
+    color:#fff; 
+    background-size:contain; 
+    transform:rotate3d(0, 0, 1, 90deg); 
+    transition:transform 0.25s;
+}
+
+details[open] > summary::-webkit-details-marker { 
+    transform:rotate3d(0, 0, 1, 180deg);
+}
+
+details[open] > summary { 
+    background:#444;
+}
+
+details[open] > summary ~ * { 
+    animation:reveal 0.5s;
+}
+
+.tpt { 
+    background:#444; 
+    color:#fff; 
+    margin:5px 0 10px; 
+    padding:5px 10px; 
+    line-height:25px; 
+    border-radius:5px; 
+    box-shadow: 1px 1px 2px gray;
+}
 
 @keyframes reveal {
     from { opacity:0; transform:translate3d(0, -30px, 0); }
