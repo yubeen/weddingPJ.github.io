@@ -40,6 +40,7 @@ body {
 
 .main_comment {
     font-family: 'nanum-square';
+    font-size: 0.7em;
 }
 
 .main_img {
@@ -93,7 +94,7 @@ body {
 }
 
 .contents_box {
-    margin: 15px;
+    margin: 2em;
 }
 
 .middle_title {
@@ -149,7 +150,14 @@ details {
 
 details > summary { 
     background:#444; 
-    color:#fff; padding:10px; outline:0; border-radius:5px; cursor:pointer; transition:background 0.5s; text-align:left; box-shadow: 1px 1px 2px gray;}
+    color:#fff; 
+    padding:10px; 
+    outline:0; 
+    border-radius:5px; 
+    cursor:pointer; 
+    transition:background 0.5s; 
+    text-align:left; 
+    box-shadow: 1px 1px 2px gray;}
 details > summary::-webkit-details-marker { 
     background:#444; 
     color:#fff; 
@@ -173,7 +181,7 @@ details[open] > summary ~ * {
 .tpt { 
     background:#444; 
     color:#fff; 
-    margin:5px 0 10px; 
+    margin:1.5em; 
     padding:5px 10px; 
     line-height:25px; 
     border-radius:5px; 
