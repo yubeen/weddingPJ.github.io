@@ -304,7 +304,7 @@ opacity: 1;
 .calendar {
 	background: #f1f1f1;
 	height: 550px;
-    perspective: 1000;
+    perspective: 600;
 	transition: .9s;
 	width: 100%;
 }
