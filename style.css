@@ -26,6 +26,10 @@ body {
     text-align: center;
 }
 
+p {
+    font-size: 1.5em;
+}
+
 .icon_section {
     font-size: 20pt;
     color: #f1c0c6;
@@ -48,24 +52,35 @@ body {
 }
 
 .tell_icon {
+    display: inline-block;
+    padding: 5px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
     color: white;
     font-size: 18pt;
     text-decoration-line: none;
-    margin: 0px 20px;
+    margin: 0px 5px;
     background-color: #ffa0d4;
 }
 
 .sms_icon {
+    display: inline-block;
+    padding: 5px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
     color: white;
     font-size: 18pt;
     text-decoration-line: none;
-    margin: 0px 20px;
+    margin: 0px 5px;
     background-color: #009fff;
 }
 
 .call_background {
-    padding: 10px;
-    border-radius: 20px;
+    font-family: 'nanum-square';
+    font-size: 12pt;
+    margin: 0.5em 0px;
 }
 
 .map_btn {
@@ -88,11 +103,13 @@ body {
 
 .contents_section {
     background-color: #f1f1f1;
-    height: 150px;
-    display: grid; 
-    grid-template-columns: 2fr 1fr;
+    padding: 0.5em;
 }
 
+.pay-contents {
+    font-family: 'nanum-square';
+    font-size: 0.7em;
+}
 .contents_box {
     margin: 2em;
 }
@@ -106,8 +123,13 @@ body {
 
 .content_style {
     color:#4b4b4b;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.info_contents {
+    font-family: 'maruburi';
     font-size: 10pt;
-    line-height: 1.7em;
 }
 
 .endding {
@@ -116,9 +138,9 @@ body {
     left: 50%;
     transform: translate( -50%, -50% );
     color: white;
-    font-family: 'NanumMyeongjo';
+    font-family: 'maruburi';
     text-align: center;
-    
+    line-height: 35px;
 }
 .endding_cover {
     width: 100%;
@@ -130,36 +152,30 @@ body {
 }
 
 .game_btn {
-    background-color: olive;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
+    background-color: #f1c0c6;
+    padding: 0.5em;
+    margin: 2em 0em;
 }
 
 .game_btn_text {
     color: white;
     text-decoration-line: none;
     font-family: 'nanum-square';
-    font-weight: 900;
 }
 
 /* 아코디언메뉴 */
-details { 
-    margin:5px 0 10px; 
-}
-
 details > summary { 
-    background:#444; 
+    font-family: 'nanum-square';
+    background:#f1c0c6; 
     color:#fff; 
-    padding:10px; 
+    padding: 10px 35px;
     outline:0; 
-    border-radius:5px; 
     cursor:pointer; 
     transition:background 0.5s; 
     text-align:left; 
-    box-shadow: 1px 1px 2px gray;}
+}
 details > summary::-webkit-details-marker { 
-    background:#444; 
+    background:#f1c0c6; 
     color:#fff; 
     background-size:contain; 
     transform:rotate3d(0, 0, 1, 90deg); 
@@ -170,22 +186,14 @@ details[open] > summary::-webkit-details-marker {
     transform:rotate3d(0, 0, 1, 180deg);
 }
 
-details[open] > summary { 
-    background:#444;
-}
-
 details[open] > summary ~ * { 
     animation:reveal 0.5s;
 }
 
 .tpt { 
-    background:#444; 
-    color:#fff; 
-    margin:1.5em; 
-    padding:5px 10px; 
-    line-height:25px; 
-    border-radius:5px; 
-    box-shadow: 1px 1px 2px gray;
+    font-family: 'nanum-square';
+    padding: 2em;
+    line-height:30px; 
 }
 
 @keyframes reveal {
@@ -291,4 +299,76 @@ opacity: 0.6;
 .active,
 .demo:hover {
 opacity: 1;
+}
+
+.calendar {
+	background: #f1f1f1;
+	height: 550px;
+    perspective: 1000;
+	transition: .9s;
+	width: 100%;
+}
+
+/* Front - Calendar */
+
+.current-date {
+	border-bottom: 1px solid #f1c0c6;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 25px;
+}
+.current-month {
+    height: 100%;
+}
+
+
+.current-date h1 {
+	color: #f1f1f1;
+	font-size: 1.4em;
+	font-weight: 300;
+}
+
+.week-days {
+	color: #3f4d64;
+	font-family: 'NanumMyeongjo';
+    margin-top: 1.2em;
+}
+
+.days {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.weeks {
+	color: #3f4d64;
+	display: flex;
+	flex-direction: column;
+	padding: 0 40px;
+
+}
+
+.weeks div {
+	display: flex;
+	font-size: 1.2em;
+	font-weight: 300;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.last-month {
+	opacity: .3;
+}
+
+.weeks span {
+	padding: 10px;
+    width: 26px;
+}
+
+.weeks span.active {
+	background: #f1c0c6;
+	border-radius: 50%;
+    color: white;
+    font-weight: bold;
 }

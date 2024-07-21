@@ -60,19 +60,81 @@
                 <div class="column"><img class="demo cursor" src="resource/sub8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Cinque Terre"></div>
                 <div class="column"><img class="demo cursor" src="resource/sub9.jpg" style="width:100%" onclick="currentSlide(9)" alt="Mountains and fjords"></div>
                 <div class="column"><img class="demo cursor" src="resource/sub10.jpg" style="width:100%" onclick="currentSlide(10)" alt="Northern Lights"></div>
-                <div class="column"><img class="demo cursor" src="resource/sub11.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise"></div>
-                <div class="column"><img class="demo cursor" src="resource/sub12.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains"></div>
+                <div class="column"><img class="demo cursor" src="resource/sub11.jpg" style="width:100%" onclick="currentSlide(11)" alt="Nature and sunrise"></div>
+                <div class="column"><img class="demo cursor" src="resource/sub12.jpg" style="width:100%" onclick="currentSlide(12)" alt="Snowy Mountains"></div>
             </div>
         </div>
-        <div class="contents_section">
-            <div style="margin: 20px;  display: flex; align-items: flex-end; text-align: start;">
-                <div style="color: #3f4d64; font-size: 30pt; font-family: 'NanumMyeongjo'; ">11월
-                    <span style="color: #3f4d64; font-size: 12pt; font-family: 'nanum-square';">토요일 오후 1시 30분</span>
+
+        <!-- 달력-->
+        <div class="calendar">
+            <div class="front">
+                <div class="current-date">
+                    <h1 style="color: #3f4d64; font-size: 30pt; font-family: 'NanumMyeongjo';">11월</h1>
+                    <h1 style="color: #3f4d64; font-size: 12pt; font-family: 'nanum-square';">
+                        <span id="DDay" style="text-align: end; display: flex; align-items: flex-end; justify-content: end; font-size: 20pt; color: #f1c0c6; font-weight: 900; margin: 10px 0px;"></span>토요일 오후 1시 30분
+                    </h1>
+                </div>
+                <div class="current-month">
+                    <div class="weeks">
+                        <div class="week-days">
+                            <span>일</span>
+                            <span>월</span>
+                            <span>화</span>
+                            <span>수</span>
+                            <span>목</span>
+                            <span>금</span>
+                            <span>토</span>
+                        </div>
+                        <div class="first">
+                            <span class="last-month">27</span>
+                            <span class="last-month">28</span>
+                            <span class="last-month">29</span>
+                            <span class="last-month">30</span>
+                            <span class="last-month">31</span>
+                            <span>01</span>
+                            <span>02</span>
+                        </div>
+                        <div class="second">
+                            <span>03</span>
+                            <span>04</span>
+                            <span>05</span>
+                            <span>06</span>
+                            <span>07</span>
+                            <span>08</span>
+                            <span>09</span>
+                        </div>
+                        <div class="third">
+                            <span>10</span>
+                            <span>11</span>
+                            <span>12</span>
+                            <span>13</span>
+                            <span>14</span>
+                            <span>15</span>
+                            <span class="active">16</span>
+                        </div>
+                        <div class="fourth">
+                            <span>17</span>
+                            <span>18</span>
+                            <span>19</span>
+                            <span>20</span>
+                            <span>21</span>
+                            <span>22</span>
+                            <span>23</span>
+                        </div>
+                        <div class="fifth">
+                            <span>24</span>
+                            <span>25</span>
+                            <span>26</span>
+                            <span>27</span>
+                            <span>28</span>
+                            <span>29</span>
+                            <span>30</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="DDay" class="icon_section" style="margin: 20px; text-align: end; display: flex; align-items: flex-end; justify-content: end;"></div>
         </div>
-        <img src="resource/date.png" class="main_img"/>
+
         <div class="icon_section">/</div>
         <div class="sub_title">오시는길</div>
         <div id="daumRoughmapContainer1719652937543" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
@@ -89,12 +151,21 @@
             <a href="https://place.map.kakao.com/m/23753350" class="map_btn" style="background-color: #FEE500; color:#191919">카카오</a>
             <a href="https://tmap.life/04ac3bb8" class="map_btn" style="background: linear-gradient(to top left, #ff63c0, #9056fb, #007afc, #00e8bf);">티맵</a>
         </div>
-        <div style="text-align: start; margin: 2em;">
+        <div style="text-align: start;">
             <div class="contents_box">
                 <div class="middle_title">주소</div>
-                <div class="content_style">경기도 광명시 광명역로 21 KTX광명역 동편 B1</div>
-                <div class="content_style">광명역사컨벤션웨딩홀</div>
+                <div class="content_style">경기도 광명시 광명역로 21 KTX광명역 <b>동편</b> 지하1층</div>
+                <div class="content_style"><b>광명역사컨벤션웨딩홀</b></div>
             </div>
+            <details>
+                <summary>웨딩홀 상세안내</summary>
+                <div class="tpt">
+                    <b>KTX광명역 내부</b>로 들어오셔서<br> 
+                    <b>5번 출구</b> 근처의 에스컬레이터를 이용해<br> 
+                    <b>지하1층</b>으로 내려오시면됩니다.
+                </div>
+                <img style="width: 100%;" src="resource/info_map.png" />
+            </details>
             <div class="contents_box">
                 <div class="middle_title">주차장</div>
                 <div class="content_style">- [제1주차장] 센트럴자이 상가 주차장 B3층 (2시간 무료)</div>
@@ -122,53 +193,81 @@
                 <div class="content_style">- 시외일반 : 3002, G9633(양재역)</div> 
                 <div class="content_style">- 공항버스 : 6004</div> 
             </div>
+            <div class="contents_box">
+                <div class="middle_title">대구 지역 셔틀 버스 안내</div>
+                <div class="content_style">- 집합장소 : 대구광역시 서구 비산5동 1025-320번지 (신랑측)</div>
+            </div>
         </div>
-            전세버스안내
+            
         <div class="icon_section">/</div>
         <div class="sub_title">연락처</div>
         <div style="display: grid; grid-template-columns: 1fr 1fr;">
-            <div class="call_background">신랑 <a href="tel:01051998448" class="tell_icon"><i class="material-symbols-outlined">call</span></a>|<a href="sms:01051998448" class="sms_icon"><i class="material-symbols-outlined">mail</i></a></div>
-            <div class="call_background">신부 <a href="tel:01084421411" class="tell_icon"><i class="material-symbols-outlined">call</span></a>|<a href="sms:01084421411" class="sms_icon"><i class="material-symbols-outlined">mail</i></a></div>
+            <div class="call_background">
+                <b>신랑</b> 배진혁
+                <a href="tel:01051998448" class="tell_icon"><i class="material-symbols-outlined">call</i></a>
+                <a href="sms:01051998448" class="sms_icon"><i class="material-symbols-outlined">mail</i></a>
+            </div>
+            <div class="call_background">
+                <b>신부</b> 신유빈
+                <a href="tel:01084421411" class="tell_icon"><i class="material-symbols-outlined">call</i></a>
+                <a href="sms:01084421411" class="sms_icon"><i class="material-symbols-outlined">mail</i></a>
+            </div>
         </div>
         <div style="display: grid; grid-template-columns: 1fr 1fr;">
             <div>
-                <div>신랑측 혼주</div>
-                <div class="call_background">아버지 이정환<a href="tel:01038261189" class="call_icon"><span class="material-symbols-outlined">call</span></a>|<a href="sms:01038261189" class="call_icon"><i class="material-symbols-outlined">mail</i></a></div>
-                <div class="call_background">어머니 이애련<a href="tel:01057518600" class="call_icon"><span class="material-symbols-outlined">call</span></a>|<a href="sms:01057518600" class="call_icon"><i class="material-symbols-outlined">mail</i></a></div>
+                <div class="call_background">◇</div>
+                <div class="call_background">
+                    <b>신랑 아버지</b> 이정환
+                    <a href="tel:01038261189" class="tell_icon"><i class="material-symbols-outlined">call</i></a>
+                    <a href="sms:01038261189" class="sms_icon"><i class="material-symbols-outlined">mail</i></a>
+                </div>
+                <div class="call_background">
+                    <b>신랑 어머니</b> 이애련
+                    <a href="tel:01057518600" class="tell_icon"><i class="material-symbols-outlined">call</i></a>
+                    <a href="sms:01057518600" class="sms_icon"><i class="material-symbols-outlined">mail</i></a>
+                </div>
             </div>
             <div>
-                <div>신부측 혼주</div>
-                <div class="call_background">아버지 신영철<a href="tel:01038080559" class="call_icon"><i class="material-symbols-outlined">call</span></a>|<a href="sms:01038080559" class="call_icon"><i class="material-symbols-outlined">mail</i></a></div>
-                <div class="call_background">어머니 김은숙<a href="tel:01052056919" class="call_icon"><i class="material-symbols-outlined">call</span></a>|<a href="sms:01052056919" class="call_icon"><i class="material-symbols-outlined">mail</i></a></div>
+                <div class="call_background">◇</div>
+                <div class="call_background">
+                    <b>신부 아버지</b> 신영철
+                    <a href="tel:01038080559" class="tell_icon"><i class="material-symbols-outlined">call</i></a>
+                    <a href="sms:01038080559" class="sms_icon"><i class="material-symbols-outlined">mail</i></a>
+                </div>
+                <div class="call_background">
+                    <b>신부 어머니</b> 김은숙
+                    <a href="tel:01052056919" class="tell_icon"><i class="material-symbols-outlined">call</i></a>
+                    <a href="sms:01052056919" class="sms_icon"><i class="material-symbols-outlined">mail</i></a>
+                </div>
             </div>
         </div>
+
         <div class="icon_section">/</div>
-        <div class="sub_title">마음 보내실 곳</div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr;">
-            <div style="margin: 1.5em;">
-                <details>
-                    <summary>신랑측</summary>
-                    <div class="tpt">
-                        <p>하나은행 620214643001</p>
-                        <p>혼주 이정환 | 대구은행 13808217075</p>
-                    </div>
-                </details>
-            </div>
-            <div style="margin: 1.5em;">
-                <details>
-                    <summary>신부측</summary>
-                    <div class="tpt">
-                        <p>하나은행 620215119024</p>
-                        <p>혼주 김은숙 | </p>
-                    </div>
-                </details>
+        <div class="contents_section" >
+            <div class="sub_title">마음 보내실 곳</div>
+            <div class="pay-contents" style="display: grid; grid-template-columns: 1fr 1fr;">
+                <div>
+                    <p><b>신랑</b> 배진혁</p>
+                    <p>하나은행 620214643001</p>
+                    <p>◇</p>
+                    <p><b>신랑측 혼주</b> (예금주:이정환)</p>
+                    <p>대구은행 13808217075</p>
+                </div>
+                <div>
+                    <p><b>신부</b> 신유빈</p>
+                    <p>하나은행 620215119024</p>
+                    <p>◇</p>
+                    <p><b>신부측 혼주</b> (예금주:김은숙)</p>
+                </div>
             </div>
         </div>
         <div class="icon_section">/</div>
         <div class="main_comment">
             <div class="sub_title">안내사항</div>
-            <p>방명록은 식장입구의 포토테이블에 배치되어있습니다.</p>
-            <p>부담없이 축하의 말씀 작성해주시면 감사하겠습니다!</p>
+            <div class="info_contents">
+                <p>방명록은 식장입구의 포토테이블에 배치되어있습니다.</p>
+                <p>부담없이 축하의 말씀 작성해주시면 감사하겠습니다!</p>
+            </div>
         </div>
 
         <div class="endding_frame">
@@ -177,7 +276,7 @@
                 행복하게 잘살겠습니다</div>
         </div>
         <div class="game_btn">
-            <a href="room_esc/room_esc_main.html" class="game_btn_text">부부의 이야기가 더 궁금하시다면?</a>
+            <a href="room_esc/room_esc_main.html" class="game_btn_text">▶ 부부의 이야기가 담긴 방탈출 게임 하러가기 ◀</a>
         </div>
     </body>
     <script src="functions.js"></script>
