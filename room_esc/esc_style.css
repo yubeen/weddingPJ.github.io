@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Amsterdam.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'maruburi';
+    src: url('./resource/MaruBuri-Regular.woff2') format('woff2');
+}
+
+body {
+    max-width: 1200px;
+    min-width: 300px;
+}
+
+.main_contents {
+    font-family: 'Amsterdam';
+    background-color: #f1f1f1;
+    color: #3f4d64;
+    font-weight: 900;
+    margin: 2em;
+}
+
+.title {
+    color: #3f4d64;
+    font-size: 20pt;
+    font-family: 'maruburi';
+    margin: 35px 0px;
+}

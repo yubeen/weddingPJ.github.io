@@ -13,13 +13,6 @@
     src: url('./resource/NanumSquareNeoTTF-bRg.woff2') format('woff2');
 }
 
-@font-face {
-    font-family: 'Amsterdam';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Amsterdam.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .material-symbols-outlined {
 	font-size:14pt !important;
 }
