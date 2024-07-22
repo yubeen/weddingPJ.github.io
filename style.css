@@ -20,6 +20,10 @@
     font-style: normal;
 }
 
+.material-symbols-outlined {
+	font-size: 18px;
+}
+
 body {
     max-width: 1200px;
     min-width: 500px;
