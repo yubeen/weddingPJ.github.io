@@ -21,12 +21,12 @@
 }
 
 .material-symbols-outlined {
-	font-size: 18px;
+	font-size:14pt !important;
 }
 
 body {
     max-width: 1200px;
-    min-width: 500px;
+    min-width: 300px;
     margin: auto;
     text-align: center;
 }
@@ -49,7 +49,8 @@ p {
 
 .main_comment {
     font-family: 'nanum-square';
-    font-size: 0.7em;
+    font-size: 0.8em;
+    margin: 1em;
 }
 
 .main_img {
@@ -63,7 +64,7 @@ p {
     height: 18px;
     border-radius: 50%;
     color: white;
-    font-size: 18pt;
+    font-size: 18pt; 
     text-decoration-line: none;
     margin: 0px 5px;
     background-color: #ffa0d4;
@@ -113,8 +114,8 @@ p {
 
 .pay-contents {
     font-family: 'nanum-square';
-    font-size: 0.7em;
 }
+
 .contents_box {
     margin: 2em;
 }
@@ -129,12 +130,12 @@ p {
 .content_style {
     color:#4b4b4b;
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.8em;
 }
 
 .info_contents {
     font-family: 'maruburi';
-    font-size: 10pt;
+    font-size: 1.2em;
 }
 
 .endding {
@@ -145,7 +146,7 @@ p {
     color: white;
     font-family: 'maruburi';
     text-align: center;
-    line-height: 35px;
+    line-height: 20px;
     font-size: 0.7em;
 }
 .endding_cover {
@@ -179,17 +180,7 @@ details > summary {
     cursor:pointer; 
     transition:background 0.5s; 
     text-align:left; 
-}
-details > summary::-webkit-details-marker { 
-    background:#f1c0c6; 
-    color:#fff; 
-    background-size:contain; 
-    transform:rotate3d(0, 0, 1, 90deg); 
-    transition:transform 0.25s;
-}
-
-details[open] > summary::-webkit-details-marker { 
-    transform:rotate3d(0, 0, 1, 180deg);
+    display: block;
 }
 
 details[open] > summary ~ * { 
