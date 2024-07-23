@@ -78,8 +78,8 @@ p {
 
 .call_background {
     font-family: 'nanum-square';
-    font-size: 10pt;
-    margin: 0.5em 0px;
+    font-size: 0.8em;
+    margin: 0.5em 1em;
 }
 
 .map_btn {
@@ -179,6 +179,10 @@ details > summary {
 
 details[open] > summary ~ * { 
     animation:reveal 0.5s;
+}
+
+details summary::marker {
+	font-size:0;
 }
 
 .tpt { 
