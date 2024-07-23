@@ -21,6 +21,7 @@ body {
     color: #3f4d64;
     font-weight: 900;
     margin: 2em;
+    line-height: 0.8em;
 }
 
 .title {
@@ -28,4 +29,5 @@ body {
     font-size: 20pt;
     font-family: 'maruburi';
     margin: 35px 0px;
+    text-align: center;
 }

@@ -14,7 +14,7 @@
 }
 
 .material-symbols-outlined {
-	font-size:14pt !important;
+	font-size:12pt !important;
 }
 
 body {
@@ -53,8 +53,8 @@ p {
 .tell_icon {
     display: inline-block;
     padding: 5px;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     color: white;
     font-size: 18pt; 
@@ -66,8 +66,8 @@ p {
 .sms_icon {
     display: inline-block;
     padding: 5px;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     color: white;
     font-size: 18pt;
@@ -78,7 +78,7 @@ p {
 
 .call_background {
     font-family: 'nanum-square';
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin: 0.5em 1em;
 }
 
