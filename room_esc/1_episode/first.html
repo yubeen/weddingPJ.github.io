@@ -1,2 +1,30 @@
-<img src="./esc.jpg"/>
-<p>탈출은 성공했습니다.</p>
+<html>
+  <head>
+    <link rel="stylesheet" href="../esc_style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,target-densitydpi=medium-dpi">
+  </head>
+  <body>
+    <img src="1.png"/>
+    <div style="text-align: center;">
+        <input type="text" id="answer">
+        <input type="button" onclick="func()" value="정답 확인">
+    </div>
+    <div style="height: 50px;">
+    </div>
+    <script type="text/javascript">
+        function func() {
+            let answer = document.getElementById('answer').value;
+            if(answer == ""){
+                alert('정답을 입력해주세요');
+            }
+            else if(answer == "시작"){
+                window.location.href = "https://yubeen.github.io/weddingPJ.github.io/room_esc/1_episode/first.html";
+            }
+            else{
+                document.getElementById('answer').value = "";
+                window.location.href = "https://yubeen.github.io/weddingPJ.github.io/room_esc/exception.html";
+            }
+        }
+    </script>
+  </body>
+</html>

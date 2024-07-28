@@ -7,12 +7,37 @@
 
 @font-face {
     font-family: 'maruburi';
-    src: url('./resource/MaruBuri-Regular.woff2') format('woff2');
+    src: url('../resource/MaruBuri-Regular.woff2') format('woff2');
 }
 
 body {
     max-width: 1200px;
     min-width: 300px;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    background-color: gainsboro;
+    border:none;
+    outline:none;
+    height:34px;
+    vertical-align:middle;
+    position:relative;
+    border-radius:5px;
+    box-sizing:border-box;
+    padding:0 18px;
+    margin: 5px 0px;
+}
+
+input[type="button"] { 
+    font-family: 'maruburi';
+    background:#ffa0d4;
+    color:#fff;
+    position:relative;
+    cursor:pointer;
 }
 
 .main_contents {
@@ -30,4 +55,22 @@ body {
     font-family: 'maruburi';
     margin: 35px 0px;
     text-align: center;
+}
+
+.exception {
+    text-align: center;
+    font-size: 2em;
+    margin: 2em 0em;
+}
+
+.exception_button {
+    text-decoration: none;
+    color: white;
+    background-color: #ffa0d4;
+    padding: 1em;
+    display: block;
+    text-align: center;
+    font-size: 14pt;
+    border-radius: 50px;
+    letter-spacing: 5px;
 }
