@@ -11,7 +11,7 @@
 }
 
 body {
-    max-width: 1200px;
+    max-width: 800px;
     min-width: 300px;
 }
 
@@ -73,4 +73,16 @@ input[type="button"] {
     font-size: 14pt;
     border-radius: 50px;
     letter-spacing: 5px;
+}
+
+.game_btn {
+    background-color: #f1c0c6;
+    padding: 0.5em;
+    margin: 2em 0em;
+}
+
+.game_btn_text {
+    color: white;
+    text-decoration-line: none;
+    font-family: 'nanum-square';
 }

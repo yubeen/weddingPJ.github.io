@@ -18,26 +18,9 @@
     <p>이런경우에는 뒤로가기나 돌아가기 버튼을 사용하셔서</p> 
     <p>이전페이지로 돌아오시면 됩니다.</p>
     <p>작게 준비한 이벤트인만큼 즐겨주시면 좋겠습니다.</p>
-    <p>진행을 위해 'start'를 입력해주세요</p>
-    <div style="text-align: center;">
-      <input type="text" id="answer">
-      <input type="button" onclick="func()" value="정답 확인">
+    <div class="game_btn">
+      <a href="https://yubeen.github.io/weddingPJ.github.i0o/room_esc/1_episode/first.html" class="game_btn_text">▶ 시작하기 ◀</a>
     </div>
-    <script type="text/javascript">
-    function func() {
-      let answer = document.getElementById('answer').value;
-      if(answer == ""){
-        alert('정답을 입력해주세요');
-      }
-      else if(answer == "시작"){
-        window.location.href = "https://yubeen.github.io/weddingPJ.github.io/room_esc/1_episode/first.html";
-      }
-      else{
-        document.getElementById('answer').value = "";
-        window.location.href = "https://yubeen.github.io/weddingPJ.github.io/room_esc/exception.html";
-      }
-    }
-    </script>
     <p>촬영 도움 이소영/임가인 | 장소 도움 머더파커 홍대점</p>
     
   </body>
