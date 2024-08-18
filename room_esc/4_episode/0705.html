@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../esc_style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,target-densitydpi=medium-dpi">
+  </head>
+  <body>
+    <img src="4_ep.png"/>
+    <div style="text-align: center;">
+        <input type="text" id="answer">
+        <input type="button" onclick="func()" value="정답 확인">
+    </div>
+    <script type="text/javascript">
+        function func() {
+            let answer = document.getElementById('answer').value;
+            if(answer == ""){
+                alert('정답을 입력해주세요');
+            }
+            else if(answer == "1330"){
+                window.location.href = "https://yubeen.github.io/weddingPJ.github.io/room_esc/4_episode/0705.html";
+            }
+            else{
+                document.getElementById('answer').value = "";
+                window.location.href = "https://yubeen.github.io/weddingPJ.github.io/room_esc/exception.html";
+            }
+        }
+    </script>
+  </body>
+</html>
