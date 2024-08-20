@@ -5,10 +5,16 @@
   </head>
   <body>
     <img src="1_ep.jpg"/>
-    <div style="text-align: center; margin-bottom: 80px;">
+    <div style="text-align: center; margin-bottom: 50px;">
         <input type="text" id="answer">
         <input type="button" onclick="func()" value="정답 확인">
     </div>
+    <details>
+      <summary>힌트 보기</summary>
+      <div class="tpt">
+          <p>첫 번째 문제인 거처럼 첫 글자가 중요합니다.</p>
+      </div>
+    </details>
     <script type="text/javascript">
         function func() {
             let answer = document.getElementById('answer').value;

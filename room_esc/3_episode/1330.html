@@ -5,10 +5,17 @@
   </head>
   <body>
     <img src="3_ep.jpg"/>
-    <div style="text-align: center; margin-bottom: 80px;">
+    <div style="text-align: center; margin-bottom: 50px;">
         <input type="text" id="answer">
         <input type="button" onclick="func()" value="정답 확인">
     </div>
+    <details>
+        <summary>힌트 보기</summary>
+        <div class="tpt">
+            <p>무지개 색상을 차례대로 찾아봅시다</p>
+            <p>꼭 글자가 모두 색칠되어 있는 것은 아닙니다</p>
+        </div>
+    </details>
     <script type="text/javascript">
         function func() {
             let answer = document.getElementById('answer').value;

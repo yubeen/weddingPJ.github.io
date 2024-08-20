@@ -73,11 +73,12 @@ input[type="button"] {
     color: white;
     background-color: #ffa0d4;
     padding: 1em;
-    display: block;
     text-align: center;
     font-size: 14pt;
     border-radius: 50px;
     letter-spacing: 5px;
+    display: inline-block;
+    margin-top: 2em;
 }
 
 .game_btn {
@@ -93,5 +94,35 @@ input[type="button"] {
 .game_btn_text {
     color: white;
     text-decoration-line: none;
-    font-family: 'nanum-square';
+    font-family: 'maruburi';
+}
+
+/* 아코디언메뉴 */
+details > summary { 
+    font-family: 'Amsterdam';
+    background:#f1c0c6; 
+    color:#fff; 
+    padding: 10px 35px;
+    outline:0; 
+    cursor:pointer; 
+    transition:background 0.5s; 
+    text-align:left; 
+    display: block;
+}
+
+details[open] > summary ~ * { 
+    animation:reveal 0.5s;
+}
+
+summary::-webkit-details-marker { /* Safari 브라우저용 사용자 정의 스타일 */
+    display: none;
+}
+summary {
+    display: block; /* 그 외의 브라우저용 사용자 정의 스타일 */
+}
+
+.tpt { 
+    font-family: 'Amsterdam';
+    padding: 2em;
+    line-height:30px; 
 }

@@ -5,10 +5,17 @@
   </head>
   <body>
     <img src="6_ep.jpg"/>
-    <div style="text-align: center; margin-bottom: 80px;">
+    <div style="text-align: center; margin-bottom: 50px;">
         <input type="text" id="answer">
         <input type="button" onclick="func()" value="정답 확인">
     </div>
+    <details>
+      <summary>힌트 보기</summary>
+      <div class="tpt">
+        <p>계산기의 숫자를 차례대로 이어 그려 보세요</p>
+        <p>띄어쓰기는 이으면 안 됩니다</p>
+      </div>
+    </details>
     <script type="text/javascript">
         function func() {
             let answer = document.getElementById('answer').value;
